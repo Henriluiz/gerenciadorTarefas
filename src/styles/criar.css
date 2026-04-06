@@ -1,0 +1,118 @@
+        :root {
+        --bg: #0f0e0c;
+        --card: #141310;
+        --border: #2a2822;
+        --gold: #c8a96e;
+        }
+        .criar-page {
+            width: 100%;
+            min-height: 100vh;
+            background: var(--bg);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-family: 'DM Mono', monospace;
+        }
+
+        .criar-container {
+            width: 100%;
+            max-width: 900px;
+        }
+
+        .criar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 1.2rem;
+        }
+
+        .criar-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            color: #f5f0e8;
+        }
+
+        /* 👇 IMPORTANTE: tudo com prefixo */
+        .criar-subtitle {
+            font-size: 0.72rem;
+            color: #c8a96e;
+            letter-spacing: 0.15em;
+        }
+
+        .criar-badge {
+            background: #c8a96e;
+            color: #0f0e0c;
+            padding: 0.4rem 0.9rem;
+        }
+
+        .criar-form-card {
+            background: #141310;
+            border: 1px solid #2a2822;
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .form-label,
+        .form-control,
+        .form-select,
+        .btn {
+            font-family: 'DM Mono', monospace;
+        }
+
+        .form-label {
+            color: #f5f0e8;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 0.35rem;
+        }
+
+        .form-control,
+        .form-select {
+            background: #0f0e0c;
+            border-color: #2a2822;
+            color: #f5f0e8;
+        }
+
+        .criar.form-control:focus,
+        .criar.form-select:focus {
+            border-color: #c8a96e;
+            box-shadow: 0 0 0 0.25rem rgba(200, 169, 110, .25);
+        }
+
+        .form-text {
+            color: #c8a96e;
+            margin-bottom: 1rem;
+        }
+
+        .btn-primary {
+            background: #c8a96e;
+            border: 1px solid #c8a96e;
+            color: #0f0e0c;
+            border-radius: 15px;
+        }
+
+        .btn-primary:hover {
+            background: #e3bf7f;
+            border-color: #e3bf7f;
+        }
+
+        .btn-back {
+            background: transparent;
+            border: 1px solid #c8a96e;
+            color: #c8a96e;
+        }
+
+        .btn-back:hover {
+            background: #c8a96e15;
+            color: #f5f0e8;
+        }
+
+        .foot-note {
+            margin-top: 1rem;
+            color: #6b6760;
+            font-size: 0.72rem;
+        }
