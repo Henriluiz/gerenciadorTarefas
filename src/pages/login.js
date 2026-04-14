@@ -22,6 +22,7 @@ function Login() {
       .then(res => res.json())
       .then(data => {
         localStorage.setItem("token", data.access_token);
+        localStorage.setItem("id", data.id);
 
         // 👉 vai pra tela de tarefas
         navigate("/tarefas");

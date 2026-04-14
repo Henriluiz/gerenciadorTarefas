@@ -13,6 +13,7 @@ function Criar() {
 
   useEffect(() => {
     const token = localStorage.getItem("token");
+    
 
     if (!token) {
       navigate("/"); // manda pro login
@@ -20,6 +21,7 @@ function Criar() {
   },);
 
   function criarTarefa() {
+    const id = localStorage.getItem("id");
     if (token) {
       fetch("http://localhost:8000/api/createTar", {
         method: "POST",
@@ -28,6 +30,7 @@ function Criar() {
           Authorization: `Bearer ${token}`,
         },
         body: JSON.stringify({
+          id_user: id,
           nome: nome,
           DataInicio: data_inicio,
           DataLimite: data_termino,

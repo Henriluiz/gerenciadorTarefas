@@ -157,13 +157,13 @@ function Tarefas() {
           <div className="search-bar">
             <div style={{ width: "100%", maxWidth: "480px" }}>
               <label style={{ fontSize: "0.65rem", color: "#c8a96e" }}>
-                Nome da Tarefa
+                Central de Tarefa
               </label>
 
               <div className="input-wrapper">
-                <input placeholder="Digite o nome da tarefa..." />
+                <input placeholder="Buscar Tarefa..." />
                 <span className="divider"></span>
-                <button onClick={() => navigate("/criar")}>Avançar →</button>
+                <button onClick={() => navigate("/criar")}>Criar →</button>
               </div>
             </div>
           </div>
